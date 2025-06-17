@@ -1,38 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fundación Larkin Ecuador</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body { font-family: 'Poppins', sans-serif; background: #f8f8f8; color: #333; }
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #333;}
     header {
-      background: white; display: flex; justify-content: space-between;
-      align-items: center; padding: 20px 40px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    .logo { font-weight: 700; font-size: 1.4rem; color: #002b5c; }
-    nav ul { display: flex; list-style: none; gap: 20px; }
-    nav a { text-decoration: none; color: #002b5c; font-weight: 600; }
+    .logo {font-weight: 700; font-size: 1.4rem; color: #00507a;}
+    nav ul {list-style: none; display: flex; gap: 20px;}
+    nav a {text-decoration: none; color: #00507a; font-weight: 600;}
     .hero {
-      background: url('https://source.unsplash.com/1600x900/?hope,children') center/cover no-repeat;
-      height: 90vh; display: flex; justify-content: center; align-items: center;
-      text-align: center; color: white; padding: 2rem;
+      background: url('https://source.unsplash.com/1600x900/?children,care') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
     }
-    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero h1 {font-size: 3em;}
+    .hero p {margin-top: 20px; font-size: 1.2em;}
     .btn {
-      display: inline-block; margin-top: 20px; padding: 12px 24px;
-      background: #00a8b5; color: white; border-radius: 30px; text-decoration: none;
-      font-weight: bold; transition: background 0.3s ease;
+      background: #00a8b5;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+      display: inline-block;
     }
-    .btn:hover { background: #007d87; }
-    section { padding: 60px 40px; }
-    section h2 { font-size: 2em; color: #002b5c; margin-bottom: 20px; }
-    section p { font-size: 1.1rem; line-height: 1.6; }
+    section {padding: 60px 40px; background: white;}
+    section:nth-child(even) {background: #f0f0f0;}
+    section h2 {font-size: 2.2rem; color: #00507a; margin-bottom: 20px;}
+    section p, section li {font-size: 1.1rem; line-height: 1.6;}
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 30%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
     footer {
-      background: #002b5c; color: white; text-align: center;
-      padding: 20px; font-size: 0.9rem;
+      background: #00507a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -43,6 +75,8 @@
       <ul>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#programas">Programas</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#alianzas">Alianzas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -51,28 +85,49 @@
   <section class="hero">
     <div>
       <h1>Unidos por la Vida</h1>
-      <p>Transformamos comunidades a través de salud, educación y desarrollo.</p>
-      <a href="#contacto" class="btn">Contáctanos</a>
+      <p>Comprometidos con transformar comunidades a través de la salud, educación y bienestar social.</p>
+      <a href="#contacto" class="btn">Súmate</a>
     </div>
   </section>
 
   <section id="nosotros">
     <h2>¿Quiénes Somos?</h2>
-    <p>Somos una organización sin fines de lucro con enfoque de seguridad humana. Nuestra labor se centra en mejorar la calidad de vida de los más vulnerables a través de programas sostenibles e inclusivos.</p>
+    <p>Somos una organización sin fines de lucro enfocada en la seguridad humana. Nuestra misión es fortalecer el tejido social de Ecuador con proyectos integrales que promuevan la salud, educación y desarrollo sostenible.</p>
+    <img src="https://source.unsplash.com/1200x500/?community,volunteers" alt="Voluntariado" style="width:100%; margin-top:20px; border-radius:10px;">
   </section>
 
   <section id="programas">
-    <h2>Nuestros Programas</h2>
-    <p>Desarrollamos iniciativas en educación, salud, asistencia social, seguridad alimentaria, medio ambiente y desarrollo comunitario.</p>
+    <h2>Programas</h2>
+    <ul>
+      <li><strong>Salud Comunitaria:</strong> brigadas médicas, vacunación y primeros auxilios.</li>
+      <li><strong>Educación y Alfabetización:</strong> niños, adultos y personas con discapacidad.</li>
+      <li><strong>Sostenibilidad Ambiental:</strong> huertos comunitarios y reforestación.</li>
+      <li><strong>Desarrollo Económico:</strong> emprendimientos y capacitación laboral.</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Impacto</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?education,children" alt="Educación">
+      <img src="https://source.unsplash.com/401x300/?medical,aid" alt="Salud">
+      <img src="https://source.unsplash.com/402x300/?agriculture,sustainability" alt="Huertos">
+    </div>
+  </section>
+
+  <section id="alianzas">
+    <h2>Aliados y Donantes</h2>
+    <p>Trabajamos con organizaciones nacionales e internacionales comprometidas con el desarrollo humano.</p>
+    <img src="https://source.unsplash.com/1200x400/?handshake,partnerships" alt="Alianzas" style="width:100%; border-radius:10px; margin-top:20px;">
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Escríbenos a <a href="mailto:contacto@larkinecuador.org">contacto@larkinecuador.org</a> o visítanos en Guayaquil, Ecuador.</p>
+    <h2>Contáctanos</h2>
+    <p>Escríbenos a <a href="mailto:contacto@larkinecuador.org">contacto@larkinecuador.org</a> o por WhatsApp. Estamos en Guayaquil, Ecuador.</p>
   </section>
 
   <footer>
-    &copy; 2025 Fundación Larkin Ecuador — Todos los derechos reservados.
+    &copy; 2025 Fundación Larkin Ecuador. Todos los derechos reservados.
   </footer>
 </body>
 </html>
