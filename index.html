@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Larkin Ecuador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #333;}
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .logo {font-weight: 700; font-size: 1.6rem; color: #00507a; text-transform: uppercase;}
+    nav ul {list-style: none; display: flex; gap: 20px;}
+    nav a {text-decoration: none; color: #00507a; font-weight: 600; transition: color 0.3s;}
+    nav a:hover {color: #00a8b5;}
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?humanity,community') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {font-size: 3.5em; margin-bottom: 10px;}
+    .hero p {font-size: 1.4em; max-width: 700px; margin: auto;}
+    .btn {
+      background: #00a8b5;
+      color: white;
+      padding: 14px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+      display: inline-block;
+    }
+    section {padding: 80px 40px; background: white;}
+    section:nth-child(even) {background: #f0f0f0;}
+    section h2 {font-size: 2.5rem; color: #00507a; margin-bottom: 25px; text-align: center;}
+    section p, section li {font-size: 1.15rem; line-height: 1.8; max-width: 900px; margin: auto;}
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #00334e;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 1rem;
+    }
+    footer a {
+      color: #00a8b5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fundación Larkin Ecuador</div>
+    <nav>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#alianzas">Alianzas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Construyendo un Futuro con Dignidad</h1>
+      <p>Transformamos vidas a través de la salud, educación, sostenibilidad y acción social en comunidades vulnerables de Ecuador.</p>
+      <a href="#contacto" class="btn">Colabora con Nosotros</a>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p>La Fundación Larkin Ecuador es una organización sin fines de lucro inspirada en el principio de seguridad humana. Nos dedicamos a empoderar a niños, mujeres, adultos mayores y personas con discapacidad mediante programas integrales y sostenibles.</p>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?volunteer,hope" alt="Voluntariado">
+      <img src="https://source.unsplash.com/400x300/?children,smile" alt="Niños felices">
+      <img src="https://source.unsplash.com/400x300/?social,care" alt="Trabajo social">
+    </div>
+  </section>
+
+  <section id="programas">
+    <h2>Programas Destacados</h2>
+    <ul>
+      <li><strong>Salud Integral:</strong> brigadas médicas, salud mental, apoyo nutricional.</li>
+      <li><strong>Educación:</strong> becas, refuerzo escolar, tecnología educativa.</li>
+      <li><strong>Medio Ambiente:</strong> eco-huertos, reciclaje y educación ambiental.</li>
+      <li><strong>Reactivación Económica:</strong> formación laboral y apoyo a emprendimientos.</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Impacto</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/401x300/?medicine,community" alt="Salud">
+      <img src="https://source.unsplash.com/402x300/?education,children" alt="Educación">
+      <img src="https://source.unsplash.com/403x300/?plants,garden" alt="Sostenibilidad">
+      <img src="https://source.unsplash.com/404x300/?training,women" alt="Emprendimiento">
+    </div>
+  </section>
+
+  <section id="alianzas">
+    <h2>Nuestros Aliados</h2>
+    <p>Gracias a nuestras alianzas con universidades, hospitales, empresas privadas y agencias internacionales, ampliamos el alcance y la efectividad de nuestros programas en todo Ecuador.</p>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?partnership,handshake" alt="Alianzas">
+      <img src="https://source.unsplash.com/401x300/?teamwork,ngo" alt="Trabajo conjunto">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Escríbenos a <a href="mailto:contacto@larkinecuador.org">contacto@larkinecuador.org</a>, llámanos o síguenos en redes sociales. Estamos en Guayaquil, Ecuador, trabajando todos los días por un país más justo y solidario.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Fundación Larkin Ecuador | Diseñado con propósito. Visítanos en <a href="https://larkinecuador.org">larkinecuador.org</a>
+  </footer>
+</body>
+</html>
