@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Larkin Ecuador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #333;}
+    header {
+      background-color: #00334e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+    .logo img { height: 50px; }
+    nav ul {list-style: none; display: flex; gap: 20px;}
+    nav a {text-decoration: none; color: white; font-weight: 600;}
+    .hero {
+      background: url('img/hero.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {font-size: 3em; text-shadow: 1px 1px 4px #000;}
+    .section {padding: 60px 40px; text-align: center;}
+    .section h2 {color: #00334e; font-size: 2em; margin-bottom: 20px;}
+    .gallery {display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;}
+    .gallery img {width: 280px; height: 180px; border-radius: 8px; object-fit: cover;}
+    footer {
+      background: #00334e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo Fundación Larkin Ecuador">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#donantes">Donantes</a></li>
+        <li><a href="#alianzas">Alianzas</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Construyendo un Futuro con Dignidad</h1>
+  </section>
+
+  <section class="section" id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="gallery">
+      <img src="img/proyecto1.jpg" alt="Proyecto Vacunación">
+      <img src="img/proyecto2.jpg" alt="Proyecto Delta">
+      <img src="img/proyecto3.jpg" alt="Salud Comunitaria">
+    </div>
+  </section>
+
+  <section class="section" id="donantes">
+    <h2>Donantes</h2>
+    <p>Gracias al apoyo de instituciones y personas generosas, logramos cambiar miles de vidas. Tu contribución también puede marcar la diferencia.</p>
+  </section>
+
+  <section class="section" id="alianzas">
+    <h2>Alianzas Estratégicas</h2>
+    <p>Trabajamos junto a universidades, municipios, ONGs y entidades internacionales para fortalecer el desarrollo local y sostenible.</p>
+  </section>
+
+  <section class="section" id="noticias">
+    <h2>Noticias y Publicaciones</h2>
+    <ul style="list-style:none;">
+      <li><strong>✔ Fundación Larkin destaca en Wall Street Journal</strong></li>
+      <li><strong>✔ Se consolida convenio de cooperación con UBE e ITB</strong></li>
+      <li><strong>✔ Arborización comunitaria en zonas vulnerables de Guayaquil</strong></li>
+    </ul>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Email: contacto@larkinecuador.org</p>
+    <p>Guayaquil, Ecuador</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Fundación Larkin Ecuador — Todos los derechos reservados
+  </footer>
+</body>
+</html>
